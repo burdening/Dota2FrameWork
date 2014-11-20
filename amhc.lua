@@ -1,1 +1,1 @@
-if amhc == nil then amhc = class({})
+require('XavierCHN/GeneralGameRules')
