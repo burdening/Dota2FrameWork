@@ -1,6 +1,12 @@
 AMHC-Code_Hub
 =============
 
+当前已完成的库：
+XavierCHN
+`amhc.XavierCHN.GeneralGameRules`
+```Lua
+amhc.XavierCHN.GeneralGameRules:SetNumKillsToWinGameRule(nKillsToWin)
+```
 
 使用方法：
 ```Lua
