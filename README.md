@@ -3,12 +3,13 @@ AMHC-Code_Hub
 
 
 使用方法：
+```Lua
 require("amhc")
 require("amhc/XavierCHN/Abilities")
 local Abi = amhc.XavierCHN.Abilities
 
 Abi:ReplaceAllAbilities( hero, { [1] = "ability_1", [3] = "ability_3"})
-
+```
 代码规则：
 1、类似命名空间的规则
 为了避免全局变量冲突，同时体现作者，代码库的代码除类名以外，均使用 amhc.作者ID.库名作为唯一全局变量。
@@ -40,6 +41,8 @@ amhc.XavierCHN.Abilities.ReplaceAllAbilities = function( self, hero, abilityTabl
     end
 end
 ```
-2、必须有详细的注释！
-3、必须有正确的缩进！
-4、其他的等我想到了再添加！
+> 2、必须有详细的注释！
+
+> 3、必须有正确的缩进！
+
+> 4、其他的等我想到了再添加！
