@@ -42,7 +42,7 @@
 #### 43 CInfoData
 #### 44 CPhysicsProp
 #### 45 CDOTAGamerules
-###### [ameRules:SetNumKillsToWinGameMode(nKills)](https://github.com/XavierCHN/AMHC-DOTA2-Code-Hub/blob/master/XavierCHN/GeneralGameRule.lua#L9)
+###### [GameRules:SetNumKillsToWinGameMode(nKills)](https://github.com/XavierCHN/AMHC-DOTA2-Code-Hub/blob/master/XavierCHN/GeneralGameRule.lua#L9)
 #### 46 CToneMapControllerComponent
 #### 47 CDebugOverlayScriptHelper
 #### 48 CBaseFlex
