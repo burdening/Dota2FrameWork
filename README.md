@@ -11,12 +11,14 @@ local Abi = amhc.XavierCHN.Abilities
 Abi:ReplaceAllAbilities( hero, { [1] = "ability_1", [3] = "ability_3"})
 ```
 代码规则：
-1、类似命名空间的规则
-为了避免全局变量冲突，同时体现作者，代码库的代码除类名以外，均使用 amhc.作者ID.库名作为唯一全局变量。
-其中，amhc由amhc_code_hub来定义，在每个库中，使用如下方式来声明
+
+> 1、类似命名空间的规则
+> 为了避免全局变量冲突，同时体现作者，代码库的代码除类名以外，均使用 amhc.作者ID.库名作为唯一全局变量。
+> 其中，amhc由amhc.lua 来定义，在每个库中，使用如下方式来声明
+
 ```Lua
 if amhc.XavierCHN == nil then amhc.XavierCHN = class({}) end
-if amhc.XavierCHN.Abilities == nil then amhc.XavierCHN.Ability = class({})
+if amhc.XavierCHN.Abilities == nil then amhc.XavierCHN.Ability = class({}) end
 
 -- 成员函数
 
