@@ -2,6 +2,7 @@ AMHC-Code_Hub
 =============
 
 当前已完成的库：
+
 XavierCHN
 `amhc.XavierCHN.GeneralGameRules`
 ```Lua
