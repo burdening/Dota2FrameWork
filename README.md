@@ -3,11 +3,26 @@ AMHC-Code_Hub
 
 当前已完成的库：
 
-XavierCHN
+#### XavierCHN
+-----------------
 `amhc.XavierCHN.GeneralGameRules`
 ```Lua
 amhc.XavierCHN.GeneralGameRules:SetNumKillsToWinGameRule(nKillsToWin)
 ```
+-----------------
+
+#### 鸽老师
+-----------------
+
+-----------------
+
+#### Archer
+-----------------
+
+-----------------
+
+
+----------------------------------
 
 使用方法：
 ```Lua
