@@ -1,3 +1,16 @@
+#### Dota2 FrameWork
+==============
+-----------------------
+
+###### 1. Create a folder here with your name, 在这个目录以你的ID创建一个文件夹;
+
+###### 2. Create anything.lua inside your folder, 在文件夹中创建你想创建的任何东西;
+
+###### 3. goto d2fw.lua and require("d2fw/your_name/anything") 在d2fw.lua require你所创建的东西。
+
+-------------------------
+#### Finished API
+-------------------------
 #### 2 Global
 #### 3 CBaseEntity
 #### 4 CEntities
