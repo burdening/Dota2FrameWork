@@ -2,7 +2,7 @@
 ==============
 -----------------------
 
-###### 1. Create a folder here with your name, 在这个目录以你的ID创建一个文件夹;
+###### 1. Create a folder inside D2FW with your name, 在D2FW目录以你的ID创建一个文件夹;
 
 ###### 2. Create anything.lua inside your folder, 在文件夹中创建你想创建的任何东西;
 
