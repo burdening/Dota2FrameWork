@@ -12,6 +12,7 @@
 #### Finished API
 -------------------------
 #### 2 Global
+###### [PrecacheEverythingFromKV( context )](https://github.com/XavierCHN/Dota2FrameWork/blob/master/D2FW/XavierCHN/ResourcePrecacher.lua#L10)
 #### 3 CBaseEntity
 #### 4 CEntities
 #### 5 CEntityInstance
@@ -55,7 +56,7 @@
 #### 43 CInfoData
 #### 44 CPhysicsProp
 #### 45 CDOTAGamerules
-###### [GameRules:SetNumKillsToWinGameRule(nKills)](https://github.com/XavierCHN/AMHC-DOTA2-Code-Hub/blob/master/XavierCHN/GeneralGameRule.lua#L9)
+###### [GameRules:SetNumKillsToWinGameRule(nKillsToWin)](https://github.com/XavierCHN/Dota2FrameWork/blob/master/D2FW/XavierCHN/GameRules.lua#L9)
 #### 46 CToneMapControllerComponent
 #### 47 CDebugOverlayScriptHelper
 #### 48 CBaseFlex
