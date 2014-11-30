@@ -1,0 +1,754 @@
+put this into your npc_abilities_custom.txt before use ParaAdjuster.lua
+
+  // 血量修正
+	"ability_health_modifier"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"BaseClass"						"ability_datadriven"
+ 
+		"Modifiers"
+		{
+			"modifier_health_mod_1"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"1"
+				}
+			}
+			"modifier_health_mod_2"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"2"
+				}
+			}
+			"modifier_health_mod_4"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"4"
+				}
+			}
+			"modifier_health_mod_8"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"8"
+				}
+			}
+			"modifier_health_mod_16"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"16"
+				}
+			}
+			"modifier_health_mod_32"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"32"
+				}
+			}
+			"modifier_health_mod_64"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"64"
+				}
+			}
+			"modifier_health_mod_128"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"128"
+				}
+			}
+			"modifier_health_mod_256"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"256"
+				}
+			}
+			"modifier_health_mod_512"
+			{
+				"IsHidden"				"1"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"512"
+				}
+			}
+			"modifier_health_mod_neg_1"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-1"
+				}
+			}
+			"modifier_health_mod_neg_2"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-2"
+				}
+			}
+			"modifier_health_mod_neg_4"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-4"
+				}
+			}
+			"modifier_health_mod_neg_8"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-8"
+				}
+			}
+			"modifier_health_mod_neg_16"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-16"
+				}
+			}
+			"modifier_health_mod_neg_32"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-32"
+				}
+			}
+			"modifier_health_mod_neg_64"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-64"
+				}
+			}
+			"modifier_health_mod_neg_128"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-128"
+				}
+			}
+			"modifier_health_mod_neg_256"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-256"
+				}
+			}
+			"modifier_health_mod_neg_512"
+			{
+				"IsHidden"				"1"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"-512"
+				}
+			}
+		}
+	}
+	//智力-魔法修正
+	"ability_mana_modifier"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"BaseClass"						"ability_datadriven"
+ 
+		"Modifiers"
+		{
+			"modifier_mana_mod_1"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"1"
+				}
+			}
+			"modifier_mana_mod_2"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"2"
+				}
+			}
+			"modifier_mana_mod_4"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"4"
+				}
+			}
+			"modifier_mana_mod_8"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"8"
+				}
+			}
+			"modifier_mana_mod_16"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"16"
+				}
+			}
+			"modifier_mana_mod_32"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"32"
+				}
+			}
+			"modifier_mana_mod_64"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"64"
+				}
+			}
+			"modifier_mana_mod_128"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"128"
+				}
+			}
+			"modifier_mana_mod_256"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"256"
+				}
+			}
+			"modifier_mana_mod_512"
+			{
+				"IsHidden"				"1"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"512"
+				}
+			}
+			"modifier_mana_mod_neg_1"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-1"
+				}
+			}
+			"modifier_mana_mod_neg_2"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-2"
+				}
+			}
+			"modifier_mana_mod_neg_4"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-4"
+				}
+			}
+			"modifier_mana_mod_neg_8"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-8"
+				}
+			}
+			"modifier_mana_mod_neg_16"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-16"
+				}
+			}
+			"modifier_mana_mod_neg_32"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-32"
+				}
+			}
+			"modifier_mana_mod_neg_64"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-64"
+				}
+			}
+			"modifier_mana_mod_neg_128"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-128"
+				}
+			}
+			"modifier_mana_mod_neg_256"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-256"
+				}
+			}
+			"modifier_mana_mod_neg_512"
+			{
+				"IsHidden"				"1"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"-512"
+				}
+			}
+		}
+	}
+	//敏捷 攻击速度修正
+	"ability_atkspeed_modifier"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"BaseClass"						"ability_datadriven"
+ 
+		"Modifiers"
+		{
+			"modifier_atkspeed_mod_1"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"1"
+				}
+			}
+			"modifier_atkspeed_mod_2"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"2"
+				}
+			}
+			"modifier_atkspeed_mod_4"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"4"
+				}
+			}
+			"modifier_atkspeed_mod_8"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"8"
+				}
+			}
+			"modifier_atkspeed_mod_16"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"16"
+				}
+			}
+			"modifier_atkspeed_mod_32"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"32"
+				}
+			}
+			"modifier_atkspeed_mod_64"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"64"
+				}
+			}
+			"modifier_atkspeed_mod_128"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"128"
+				}
+			}
+			"modifier_atkspeed_mod_256"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"256"
+				}
+			}
+			"modifier_atkspeed_mod_512"
+			{
+				"IsHidden"				"1"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"512"
+				}
+			}
+			"modifier_atkspeed_mod_neg_1"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-1"
+				}
+			}
+			"modifier_atkspeed_mod_neg_2"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-2"
+				}
+			}
+			"modifier_atkspeed_mod_neg_4"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-4"
+				}
+			}
+			"modifier_atkspeed_mod_neg_8"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-8"
+				}
+			}
+			"modifier_atkspeed_mod_neg_16"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-16"
+				}
+			}
+			"modifier_atkspeed_mod_neg_32"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-32"
+				}
+			}
+			"modifier_atkspeed_mod_neg_64"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-64"
+				}
+			}
+			"modifier_atkspeed_mod_neg_128"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-128"
+				}
+			}
+			"modifier_atkspeed_mod_neg_256"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-256"
+				}
+			}
+			"modifier_atkspeed_mod_neg_512"
+			{
+				"IsHidden"				"1"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-512"
+				}
+			}
+		}
+	}
+	//敏捷 攻击速度修正
+	"ability_armor_modifier"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"BaseClass"						"ability_datadriven"
+ 
+		"Modifiers"
+		{
+			"modifier_armor_mod_1"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"1"
+				}
+			}
+			"modifier_armor_mod_2"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"2"
+				}
+			}
+			"modifier_armor_mod_4"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"4"
+				}
+			}
+			"modifier_armor_mod_8"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"8"
+				}
+			}
+			"modifier_armor_mod_16"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"16"
+				}
+			}
+			"modifier_armor_mod_32"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"32"
+				}
+			}
+			"modifier_armor_mod_64"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"64"
+				}
+			}
+			"modifier_armor_mod_128"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"128"
+				}
+			}
+			"modifier_armor_mod_256"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"256"
+				}
+			}
+			"modifier_armor_mod_512"
+			{
+				"IsHidden"				"1"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"512"
+				}
+			}
+			"modifier_armor_mod_neg_1"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-1"
+				}
+			}
+			"modifier_armor_mod_neg_2"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-2"
+				}
+			}
+			"modifier_armor_mod_neg_4"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-4"
+				}
+			}
+			"modifier_armor_mod_neg_8"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-8"
+				}
+			}
+			"modifier_armor_mod_neg_16"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-16"
+				}
+			}
+			"modifier_armor_mod_neg_32"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-32"
+				}
+			}
+			"modifier_armor_mod_neg_64"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-64"
+				}
+			}
+			"modifier_armor_mod_neg_128"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-128"
+				}
+			}
+			"modifier_armor_mod_neg_256"
+			{
+				"IsHidden"				"1"  
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-256"
+				}
+			}
+			"modifier_armor_mod_neg_512"
+			{
+				"IsHidden"				"1"  
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-512"
+				}
+			}
+		}
+	}
