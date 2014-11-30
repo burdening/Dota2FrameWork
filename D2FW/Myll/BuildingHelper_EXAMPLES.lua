@@ -1,8 +1,7 @@
 --[[
 	Some tips:
-	Make sure you add your units first somewhere in your code before adding any buildings, or else the units won't be checked for collision:
-	BuildingHelper:AddUnit(heroEntity)
 	Put BuildingHelper:BlockGridNavSquares(nMapLength) in your InitGameMode function.
+	Remember to call building:RemoveBuilding before the building dies (or in the entity_killed event) to re-open the closed squares.
 	If units are getting stuck put "BoundsHullName"   "DOTA_HULL_SIZE_TOWER" for buildings in npc_units_custom.txt
 ]]
 
@@ -14,8 +13,8 @@ function getBuildingPoint(keys)
 	if point ~= -1 then
 		local farm = CreateUnitByName("npc_normal_farm", point, false, nil, nil, keys.caster:GetTeam())
 		BuildingHelper:AddBuilding(farm)
+		farm:Pack()
 		farm:UpdateHealth(BUILD_TIME,true,.85)
-		farm:SetHullRadius(64)
 		farm:SetControllableByPlayer( keys.caster:GetPlayerID(), true )
 	else
 		--Fire a game event here and use Actionscript to let the player know he can't place a building at this spot.
@@ -35,8 +34,7 @@ function getHardFarmPoint(keys)
 		local farm = CreateUnitByName("npc_hard_farm", point, false, nil, nil, caster:GetTeam())
 		BuildingHelper:AddBuilding(farm)
 		farm:UpdateHealth(BUILD_TIME,true,.8)
-		farm:SetHullRadius(128)
 		farm:SetControllableByPlayer( caster:GetPlayerID(), true )
 	end
 end
-]]
+--]]
