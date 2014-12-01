@@ -2,17 +2,20 @@
 ==============
 -----------------------
 
-###### 1. Create a folder inside D2FW with your name, 在D2FW目录以你的ID创建一个文件夹;
+###### 1. Create a folder inside D2FW with your name,   在D2FW目录以你的ID创建一个文件夹;
 
-###### 2. Create anything.lua inside your folder, 在文件夹中创建你想创建的任何东西;
+###### 2. Create anything.lua inside your folder,    在文件夹中创建你想创建的任何东西;
 
-###### 3. goto d2fw.lua and require("d2fw/your_name/anything") 在d2fw.lua require你所创建的东西。
+###### 3. goto d2fw.lua and require("d2fw/your_name/anything")    在d2fw.lua require你所创建的东西。
 
 -------------------------
 #### Finished API
 -------------------------
 #### 2 Global
 ###### [PrecacheEverythingFromKV( context )](https://github.com/XavierCHN/Dota2FrameWork/blob/master/D2FW/XavierCHN/ResourcePrecacher.lua#L10)
+###### [Library: Equilibrium Parameter Adjuster](https://github.com/XavierCHN/Dota2FrameWork/blob/master/D2FW/XavierCHN/ParaAdjuster.lua)
+###### [Library: Physics (by BMD)](https://github.com/XavierCHN/Dota2FrameWork/blob/master/D2FW/BMDDota/Physics.lua)
+###### [Library: Building Helper (by Myll)](https://github.com/XavierCHN/Dota2FrameWork/blob/master/D2FW/Myll/BuildingHelper.lua)
 #### 3 CBaseEntity
 #### 4 CEntities
 #### 5 CEntityInstance
