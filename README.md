@@ -1,6 +1,15 @@
 #### Dota2 FrameWork
 ==============
+
 -----------------------
+
+#### How to use
+
+`require('d2fw')` in anywhere you needs to use the dota2 lua frame work
+
+-----------------------
+
+### Welcome to contribute
 
 ###### 1. Create a folder inside D2FW with your name,   在D2FW目录以你的ID创建一个文件夹;
 
