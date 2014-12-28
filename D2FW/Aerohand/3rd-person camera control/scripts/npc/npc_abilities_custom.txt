@@ -1,0 +1,167 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+ "majia"  //马甲的基本技能
+  {
+    "BaseClass"       "ability_datadriven"
+    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+    "Modifiers"
+    {
+      "modifier_majia"
+      {
+        "Passive"   "1"
+        "IsHidden"    "1"
+
+        "States"
+        {
+          "MODIFIER_STATE_NO_HEALTH_BAR"  "MODIFIER_STATE_VALUE_ENABLED" //隐藏血条
+          "MODIFIER_STATE_MAGIC_IMMUNE" "MODIFIER_STATE_VALUE_ENABLED" //魔法免疫
+          "MODIFIER_STATE_ATTACK_IMMUNE"  "MODIFIER_STATE_VALUE_ENABLED" //攻击免疫
+          "MODIFIER_STATE_UNSELECTABLE" "MODIFIER_STATE_VALUE_ENABLED" //不可选择
+          "MODIFIER_STATE_NO_UNIT_COLLISION"  "MODIFIER_STATE_VALUE_ENABLED" //无碰撞
+        }
+      }
+    }
+  }
+	"pom_Elune_Arrow"
+	{
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		//"AbilityTextureName"	"lina_dragon_slave"
+     
+		"AbilityCastPoint"      "0"
+		//"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilityCooldown"       "0"
+
+		"precache" //缓存特效
+        {
+            "particle"       "particles/gyro_base_attack.vpcf"
+        }
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"scripts/vscripts/projectiletest.lua"
+				"Function"			"shemejiba"
+				"DamageRad"			"2000"
+				"DamageRadius"		"2000"
+				"Target"			"POINT"
+			}
+		}
+
+		//在RunScript中通过Lua施放了线性投射物，这里可以响应命中目标
+		"OnProjectileHitUnit"  
+        {
+        	"DeleteOnHit"        "1"  //命中之后不删除投射物
+        	"Damage"//这里改成Script
+        	{
+        		"Damage"		"999999"
+        		"Target"		"TARGET"
+        		"Type"			"DAMAGE_TYPE_PURE"
+        	}
+        }
+        "AbilitySpecial"
+		{
+			"01"  //距离
+			{
+				"var_type"		"FIELD_INTEGER"
+				"distance"		"1500"
+			}
+		}
+
+	}
+
+    
+"pom_Elune_Arrow2"
+	{
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		//"AbilityTextureName"	"lina_dragon_slave"
+
+		"AbilityCastPoint"      "0"
+		//"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilityCooldown"       "0"
+
+		"precache" //缓存特效
+        {
+            "particle"       "particles/gyro_base_attack.vpcf"
+        }
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"scripts/vscripts/projectiletest.lua"
+				"Function"			"shemejiba"
+				"DamageRad"			"2000"
+				"DamageRadius"		"2000"
+				"Target"			"POINT"
+			}
+		}
+
+		//在RunScript中通过Lua施放了线性投射物，这里可以响应命中目标
+		"OnProjectileHitUnit"  
+        {
+        	"DeleteOnHit"        "1"  //命中之后不删除投射物
+        	"Damage"//这里改成Script
+        	{
+        		"Damage"		"999999"
+        		"Target"		"TARGET"
+        		"Type"			"DAMAGE_TYPE_PURE"
+        	}
+        }
+        "AbilitySpecial"
+		{
+			"01"  //距离
+			{
+				"var_type"		"FIELD_INTEGER"
+				"distance"		"1500"
+			}
+		}
+
+	}
+        "imba_boost_laser"
+    {
+        "BaseClass"             "ability_datadriven"
+        "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityUnitDamageType" "DAMAGE_TYPE_MAGICAL"
+        "AbilityTextureName"    "tinker_laser"
+
+        "AbilityCastPoint"      "0"
+        //"AbilityCastAnimation"    "ACT_DOTA_CAST_ABILITY_1"
+
+        "AbilityCooldown"       "0"
+        "precache" //缓存特效
+        {
+            "particle"       "particles/chen_cast_4.vpcf"
+        }
+        "OnSpellStart"
+        {
+            "RunScript"
+            {
+                "ScriptFile"        "scripts/vscripts/projectiletest.lua"
+                "Function"          "laser_boost"
+                "DamageRadius"      "20000"
+                "DamageRad"         "20000"
+            }
+        }
+        "OnProjectileHitUnit"  
+        {
+            "DeleteOnHit"        "0"  //命中之后不删除投射物
+            "Damage"//这里改成Script
+            {
+                "Damage"        "999999"
+                "Target"        "TARGET"
+                "Type"          "DAMAGE_TYPE_PURE"
+            }
+        }
+    }
+
+}
